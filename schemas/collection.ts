@@ -23,7 +23,7 @@ export default {
       titles: 'Series',
       name: 'series',
       type: 'array',
-      of: [{type: 'series'}],
+      of: [{type: 'reference', to: [{type: 'series'}]}],
       validation: (Rule: any) => Rule.required().min(1),
     },
   ],
