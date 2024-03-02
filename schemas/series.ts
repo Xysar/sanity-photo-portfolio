@@ -19,6 +19,8 @@ export default {
       },
       validation: (Rule: any) => Rule.required(),
     },
+    {title: 'Thumbnail', name: 'thumbnail', type: 'image'},
+
     {
       title: 'Date',
       name: 'date',
