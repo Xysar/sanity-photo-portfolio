@@ -19,8 +19,7 @@ export default {
       },
       validation: (Rule: any) => Rule.required(),
     },
-    {title: 'Thumbnail', name: 'thumbnail', type: 'image'},
-
+    {title: 'Thumbnail', name: 'thumbnail', type: 'image', options: {hotspot: true}},
     {
       title: 'Date',
       name: 'date',
