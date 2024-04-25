@@ -13,10 +13,10 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
-    visionTool(),
     structureTool({
       structure: myStructure,
     }),
+    visionTool(),
   ],
 
   schema: {
