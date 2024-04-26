@@ -73,7 +73,7 @@ export default {
       type: 'string',
       options: {
         list: [
-          {title: 'Commission', value: 'commission'},
+          {title: 'Projects', value: 'projects'},
           {title: 'Personal', value: 'personal'},
           {title: 'Folklorico', value: 'folklorico'},
           {title: 'Other', value: 'other'},

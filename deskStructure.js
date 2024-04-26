@@ -5,7 +5,10 @@ export const myStructure = (S) =>
       S.listItem()
         .title('About Page Info')
         .child(S.document().schemaType('siteSettings').documentId('siteSettings')),
+      S.listItem()
+        .title('Homepage')
+        .child(S.document().schemaType('homePage').documentId('homePage')),
       ...S.documentTypeListItems().filter(
-        (listItem) => !['siteSettings'].includes(listItem.getId())
+        (listItem) => !['siteSettings', 'homePage'].includes(listItem.getId())
       ),
     ])

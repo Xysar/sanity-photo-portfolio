@@ -1,6 +1,6 @@
 import {defineConfig} from 'sanity'
 import {media} from 'sanity-plugin-media'
-import {visionTool} from '@sanity/vision'
+
 import {schemaTypes} from './schemas'
 import {myStructure} from './deskStructure'
 import {structureTool} from 'sanity/structure'
