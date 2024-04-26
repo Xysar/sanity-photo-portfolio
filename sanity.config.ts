@@ -1,5 +1,5 @@
 import {defineConfig} from 'sanity'
-import {media} from 'sanity-plugin-media'
+import {media, mediaAssetSource} from 'sanity-plugin-media'
 
 import {schemaTypes} from './schemas'
 import {myStructure} from './deskStructure'
@@ -18,7 +18,14 @@ export default defineConfig({
     }),
     media(),
   ],
-
+  form: {
+    // Don't use this plugin when selecting files only (but allow all other enabled asset sources)
+    file: {
+      assetSources: (previousAssetSources) => {
+        return previousAssetSources.filter((assetSource) => assetSource !== mediaAssetSource)
+      },
+    },
+  },
   schema: {
     types: schemaTypes,
   },
