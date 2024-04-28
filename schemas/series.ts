@@ -75,6 +75,7 @@ export default {
         list: [
           {title: 'Projects', value: 'projects'},
           {title: 'Personal', value: 'personal'},
+          {title: 'Days of My Lives', value: 'daysofmylives'},
           {title: 'Folklorico', value: 'folklorico'},
           {title: 'Other', value: 'other'},
         ],
